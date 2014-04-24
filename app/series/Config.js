@@ -7,7 +7,7 @@ define([],
 			//The web map id
 			webmaps: [
 			{
-				id: "04744b7ad124458489ea821da3129352",
+				id: "b9c496675c02461cbdc8e3cd850976e3",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -16,7 +16,7 @@ define([],
 				// Set to true if you want the legend of this specific map to open when a user selects the tab for this map.
 				openLegendOnChange: false
 			},{
-				id: "d0f1c5ae11d24c778d597f8bbddcf85f",
+				id: "a01927e7557f41dc8eef93c8820e6763",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -26,7 +26,17 @@ define([],
 				openLegendOnChange: false
 			},
 			{
-				id: "bb5a3da962ac4040b2f52f5869fddbd8",
+				id: "66d03eaca55443c7998e55a571704966",
+				title: "",
+				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
+				showSingleTimeInstance: false,
+				// Hide legend and legend toggle for specific map by setting this option to false
+				legendVisible: true,
+				// Set to true if you want the legend of this specific map to open when a user selects the tab for this map.
+				openLegendOnChange: false
+			},
+			{
+				id: "e943dca78cd941e1b33e2a8ed3de3d47",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -61,9 +71,9 @@ define([],
 			//	}
 			],
 			//Enter a title, if no title is specified, the first webmap's title is used.
-			title: "Add a title here",
+			title: "California High Speed Rail",
 			//Enter a subtitle, if no subtitle is specified, the first webmap's subtitle is used.
-			subtitle: "Add a subtitle here",
+			subtitle: "Benefits to California",
 			// If false, each tab will have a number on it. If true, the first tab will not have a number and the second tab will start counting at 1.
 			startCountOnSecondTab: false,
 			//Sync maps scale and location
