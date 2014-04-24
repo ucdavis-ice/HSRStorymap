@@ -128,7 +128,9 @@ define(["esri/map",
 			var mapDeferred = esri.arcgis.utils.createMap(configOptions.webmaps[app.maps.length].id,"map"+app.maps.length,{
 				mapOptions: {
 					extent: getExtent(),
-					infoWindow: popup
+					infoWindow: popup,
+					minZoom: 6,
+					maxZoom: 9
 				},
 				bingMapsKey: configOptions.bingmapskey
 			});
