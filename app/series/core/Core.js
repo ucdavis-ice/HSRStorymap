@@ -261,7 +261,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer],
-				title:"World Topographic Map",
+				title:"World Topographic",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/30e5fe3149c34df1ba922e6f5bbf808f/info/thumbnail/topo_map_2.jpg"
 			});
 			basemapGallery.add(basemap);
