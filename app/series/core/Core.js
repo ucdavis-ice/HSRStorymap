@@ -4,7 +4,8 @@ define(["esri/map",
 		"esri/widgets",
 		"dojo/has",
 		"storymaps/utils/Helper",
-		"storymaps/ui/TimeSlider"],
+		"storymaps/ui/TimeSlider",
+		"esri/dijit/BasemapGallery"],
 	function(
 		Map,
 		Utils,
@@ -12,7 +13,8 @@ define(["esri/map",
 		Widgets,
 		Has,
 		Helper,
-		TimeSlider)
+		TimeSlider,
+		BasemapGallery)
 	{
 		/**
 		 * Core
@@ -243,7 +245,21 @@ define(["esri/map",
 				},map.container.id+'geocoder');
 				geocoder.startup();
 			}
+			
+			//ADD BASEMAP GALLERY
+			$("#" + map.container.id).append('<div id="'+map.container.id+'basemapGallery" class="basemap-gallery"></div>');
 
+			var basemapGallery = new BasemapGallery({
+			showArcGISBasemaps: true,
+			map: map
+			}, map.container.id+'basemapGallery');
+
+			basemapGallery.startup();
+
+			basemapGallery.on("error", function(msg) {
+			console.log("basemap gallery error: ", msg);
+			});
+			
 			//ADD LEGEND
 			if(layers.length > 0){
 				var legend = new esri.dijit.Legend({
