@@ -310,7 +310,7 @@ define(["esri/map",
 				else{
 					$("#legend-pane").stop(true,true).slideToggle(400,function(){
 						setLegendToggle();
-						if($("#application-window").width() <= 780){
+						if( true || $("#application-window").width() <= 780){
 							if($("#legend-pane").is(":visible")){
 								$("#close-mobile-legend").show();
 							}
