@@ -253,6 +253,7 @@ define(["esri/map",
 
 			var basemapGallery = new BasemapGallery({
 			showArcGISBasemaps: false,
+			basemapsGroup:{owner:"N_Roth",title:"HSR Basemaps"},
 			map: map
 			}, map.container.id+'basemapGallery');
 

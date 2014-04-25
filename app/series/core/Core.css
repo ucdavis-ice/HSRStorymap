@@ -216,7 +216,12 @@ b{
 }
 .esriBasemapGallery{
 position: absolute;
-bottom: 20px;
+top: 150px;
 left: 20px;
 z-index: 2;
+}
+.esriBasemapGalleryThumbnail{ 
+
+border-color: #FFFFF !important; 
+
 }
