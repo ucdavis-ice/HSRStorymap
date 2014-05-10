@@ -193,7 +193,7 @@ define(["esri/map",
 
 				dojo.connect(map.infoWindow,"onShow",function(){
 					var mapIndex = $.inArray(map,app.maps);
-					if( true || $("#application-window").width() <= 780){
+					if($("#application-window").width() <= 780){
 						if($(".mobile-popup-content").eq(mapIndex).html() === ""){
 							$(".mobile-popup-content").each(function(i){
 								$(this).append($(".contentPane").eq(i));
