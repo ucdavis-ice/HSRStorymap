@@ -29,12 +29,12 @@
 }
 
 .accordion-header:hover{
-	background-color: #dadada;
+	background-color: #F8EECC;
 	cursor: pointer;
 }
 
 .accordion-header.active:hover{
-	background-color: #bbb;
+	background-color: #E9CC66;
 	cursor: default;
 }
 
