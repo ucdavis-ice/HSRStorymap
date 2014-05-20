@@ -1,0 +1,11 @@
+Travel Times & Cost To Travel To {Label} From:
+San Francisco: {tt_sf} min., ${c_sf}
+Millbrea (SFO): {tt_mb} min, ${c_mb}
+San Jose:{tt_sj} min., ${c_sj}
+Gilroy:{tt_gl} min., ${c_gl}
+Merced:{tt_mer} min., ${c_mer}
+Fresno:{tt_fre} min., ${c_fre}
+Bakersfield:{tt_bak} min., ${c_bak}
+Palmdale:{tt_pd} min., ${c_pd}
+San Fernando Valley:{tt_sfer} min., ${c_sfer}
+Los Angeles: {tt_la} min., ${c_la}
