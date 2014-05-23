@@ -256,14 +256,14 @@ define(["esri/map",
 			basemapsGroup:{owner:"N_Roth",title:"HSR Basemaps"},
 			map: map
 			}, map.container.id+'basemapGallery');
-			var layer = new esri.dijit.BasemapLayer({
+			var ceslayer = new esri.dijit.BasemapLayer({
 				url:"http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/CES20_Tile/MapServer"
 			});
 			var layer2 = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
 			});
 			var basemap = new esri.dijit.Basemap({
-				layers:[layer2, layer], 
+				layers:[layer2, ceslayer], 
 				title:"CalEnviro- Screen v2.0",
 				thumbnailUrl:"resources/images/app/ces_thumb.png"
 			});
@@ -296,10 +296,14 @@ define(["esri/map",
 			});
 			
 			//ADD LEGEND
+			var legendLayers = [];
+			legendLayers.push(layers);
+			//legendLayers.push({layer:ceslayer, title:"CalEnviroScreen"});
+			
 			if(layers.length > 0){
 				var legend = new esri.dijit.Legend({
-					map: map,
-					layerInfos: layers
+					map: map
+					//layerInfos: layers
 				},"legend"+index);
 				legend.startup();
 			}
