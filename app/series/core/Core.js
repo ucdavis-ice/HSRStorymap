@@ -256,7 +256,19 @@ define(["esri/map",
 			basemapsGroup:{owner:"N_Roth",title:"HSR Basemaps"},
 			map: map
 			}, map.container.id+'basemapGallery');
-
+			var layer = new esri.dijit.BasemapLayer({
+				url:"http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/CES20_Tile/MapServer"
+			});
+			var layer2 = new esri.dijit.BasemapLayer({
+				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
+			});
+			var basemap = new esri.dijit.Basemap({
+				layers:[layer2, layer], 
+				title:"CalEnviro- Screen v2.0 (Draft)",
+				thumbnailUrl:"resources/images/app/ces_thumb.png"
+			});
+			basemapGallery.add(basemap);
+			
 			var layer = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"
 			});
