@@ -264,7 +264,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer2, layer], 
-				title:"CalEnviro- Screen v2.0 (Draft)",
+				title:"CalEnviro- Screen v2.0",
 				thumbnailUrl:"resources/images/app/ces_thumb.png"
 			});
 			basemapGallery.add(basemap);
