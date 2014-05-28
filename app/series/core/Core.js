@@ -257,7 +257,7 @@ define(["esri/map",
 			map: map
 			}, map.container.id+'basemapGallery');
 			var ceslayer = new esri.dijit.BasemapLayer({
-				url:"http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/CES20_Tile/MapServer"
+				url: "http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/CalEnviroScreen_v2_Draft/MapServer"
 			});
 			var layer2 = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
