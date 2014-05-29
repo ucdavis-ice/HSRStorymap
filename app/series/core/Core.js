@@ -269,6 +269,19 @@ define(["esri/map",
 			});
 			basemapGallery.add(basemap);
 			
+			var sjvbplayer = new esri.dijit.BasemapLayer({
+				url: "http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/SJV_Blueprint_Scenario_B_Plus/MapServer"
+			});
+			var layer2 = new esri.dijit.BasemapLayer({
+				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
+			});
+			var basemap = new esri.dijit.Basemap({
+				layers:[layer2, sjvbplayer], 
+				title:"SJV B+ 2050 Growth",
+				thumbnailUrl:"resources/images/app/sjvbp_thumb.png"
+			});
+			basemapGallery.add(basemap);
+			
 			var layer = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"
 			});
@@ -278,7 +291,7 @@ define(["esri/map",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/30e5fe3149c34df1ba922e6f5bbf808f/info/thumbnail/topo_map_2.jpg"
 			});
 			basemapGallery.add(basemap);
-
+			/*
 			var layer = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
 			});
@@ -288,7 +301,7 @@ define(["esri/map",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/8b3d38c0819547faa83f7b7aca80bd76/info/thumbnail/light_canvas.jpg"
 			});
 			basemapGallery.add(basemap);
-			
+			*/
 			
 			basemapGallery.startup();
 			basemapGallery.on("error", function(msg) {
