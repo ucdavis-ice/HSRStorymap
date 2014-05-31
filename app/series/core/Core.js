@@ -256,6 +256,7 @@ define(["esri/map",
 			basemapsGroup:{owner:"N_Roth",title:"HSR Basemaps"},
 			map: map
 			}, map.container.id+'basemapGallery');
+			
 			var ceslayer = new esri.dijit.BasemapLayer({
 				url: "http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/CalEnviroScreen_v2_Draft/MapServer"
 			});
@@ -279,6 +280,32 @@ define(["esri/map",
 				layers:[layer2, sjvbplayer], 
 				title:"SJV B+ 2050 Growth",
 				thumbnailUrl:"resources/images/app/sjvbp_thumb.png"
+			});
+			basemapGallery.add(basemap);
+			
+			var unemplayer = new esri.dijit.BasemapLayer({
+				url: "http://server.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Unemployment_Rate/MapServer"
+			});
+			var layer2 = new esri.dijit.BasemapLayer({
+				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
+			});
+			var basemap = new esri.dijit.Basemap({
+				layers:[layer2, unemplayer], 
+				title:"2012 Unemployment",
+				thumbnailUrl:"resources/images/app/unemp_thumb.png"
+			});
+			basemapGallery.add(basemap);
+			
+			var taplayer = new esri.dijit.BasemapLayer({
+				url: "http://server.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Tapestry/MapServer"
+			});
+			var layer2 = new esri.dijit.BasemapLayer({
+				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
+			});
+			var basemap = new esri.dijit.Basemap({
+				layers:[layer2, taplayer], 
+				title:"2012 Tapestry",
+				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/f5c23594330d431aa5d9a27abb90296d/info/thumbnail/Tapestery.jpg"
 			});
 			basemapGallery.add(basemap);
 			
