@@ -387,8 +387,28 @@ define(["esri/map",
 				else{
 					$("#legend-pane").stop(true,true).slideToggle(400,function(){
 						setLegendToggle();
-						if( true || $("#application-window").width() <= 780){
+						if($("#application-window").width() <= 780){
 							if($("#legend-pane").is(":visible")){
+								$("#close-mobile-legend").show();
+							}
+							else{
+								$("#close-mobile-legend").hide();
+							}
+						}
+					});
+				}
+			});
+			
+			$(".source-toggle").click(function(){
+				hidePopups();
+				if(Has("ie") <= 8){
+					$("#source-pane").toggle(400,setSourceToggle());
+				}
+				else{
+					$("#source-pane").stop(true,true).slideToggle(400,function(){
+						setSourceToggle();
+						if($("#application-window").width() <= 780){
+							if($("#source-pane").is(":visible")){
 								$("#close-mobile-legend").show();
 							}
 							else{
@@ -425,6 +445,16 @@ define(["esri/map",
 			}
 		}
 
+		function setSourceToggle()
+		{
+			if($("#source-pane").is(":visible")){
+				$("#source-toggle").html("DATA SOURCES &#9650;");
+			}
+			else{
+				$("#source-toggle").html("DATA SOURCES &#9660;");
+			}
+		}
+		
 		function hidePopups()
 		{
 			dojo.forEach(app.maps,function(map){
