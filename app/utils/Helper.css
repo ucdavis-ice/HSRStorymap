@@ -194,6 +194,28 @@ li{
 	border-bottom: 2px solid #888;
 	border-left: 2px solid #888;
 }
+#source-wrapper{
+	position: absolute;
+	width: 300px;
+	top: 0;
+	right: 200px;
+	z-index: 2;
+}
+
+#source-toggle{
+	background-color: #888;
+	color: #fff;
+	padding: 8px 15px;
+	cursor: pointer;
+}
+
+#source-pane{
+	background-color: #fff;
+	overflow: hidden;
+	border-right: 2px solid #888;
+	border-bottom: 2px solid #888;
+	border-left: 2px solid #888;
+
 
 .legend{
 	padding: 15px;
@@ -289,6 +311,7 @@ li{
 		right: 5%;
 		z-index: 3;
 	}
+
 
 	#legend-toggle{
 		display: none;
