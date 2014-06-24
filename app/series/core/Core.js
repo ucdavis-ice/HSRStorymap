@@ -247,7 +247,7 @@ define(["esri/map",
 				},map.container.id+'geocoder');
 				geocoder.startup();
 			}
-			
+			/*
 			//ADD BASEMAP GALLERY
 			$("#" + map.container.id).append('<div id="'+map.container.id+'basemapGallery" class="basemap-gallery"></div>');
 
@@ -318,7 +318,7 @@ define(["esri/map",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/30e5fe3149c34df1ba922e6f5bbf808f/info/thumbnail/topo_map_2.jpg"
 			});
 			basemapGallery.add(basemap);
-			/*
+			
 			var layer = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"
 			});
@@ -328,12 +328,13 @@ define(["esri/map",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/8b3d38c0819547faa83f7b7aca80bd76/info/thumbnail/light_canvas.jpg"
 			});
 			basemapGallery.add(basemap);
-			*/
+			
 			
 			basemapGallery.startup();
 			basemapGallery.on("error", function(msg) {
 			console.log("basemap gallery error: ", msg);
 			});
+			*/
 			
 			//ADD LEGEND
 			var legendLayers = [];
