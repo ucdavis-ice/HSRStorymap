@@ -44,6 +44,16 @@ define([],
 				legendVisible: true,
 				// Set to true if you want the legend of this specific map to open when a user selects the tab for this map.
 				openLegendOnChange: false
+			},
+			{
+				id: "c8accaacb48d4c1ea763143fd3a22a66",
+				title: "",
+				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
+				showSingleTimeInstance: false,
+				// Hide legend and legend toggle for specific map by setting this option to false
+				legendVisible: true,
+				// Set to true if you want the legend of this specific map to open when a user selects the tab for this map.
+				openLegendOnChange: false
 			}
 			// To add additional maps to the template, uncomment the below section for
 			// each map you would like to add. Webmap titles from ArcGIS Online will
