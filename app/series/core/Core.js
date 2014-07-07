@@ -265,7 +265,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer2, ceslayer], 
-				title:"CalEnviro- Screen v2.0",
+				title:"Population Health Risk",
 				thumbnailUrl:"resources/images/app/ces_thumb.png"
 			});
 			basemapGallery.add(basemap);
@@ -278,7 +278,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer2, sjvbplayer], 
-				title:"SJV B+ 2050 Growth",
+				title:"2050 Compact vs. Sprawl",
 				thumbnailUrl:"resources/images/app/sjvbp_thumb.png"
 			});
 			basemapGallery.add(basemap);
