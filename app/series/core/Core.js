@@ -265,7 +265,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer2, ceslayer], 
-				title:"Population Health Risk",
+				title:"Income Health Risk",
 				thumbnailUrl:"resources/images/app/ces_thumb.png"
 			});
 			basemapGallery.add(basemap);
@@ -278,7 +278,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer2, sjvbplayer], 
-				title:"2050 Compact vs. Sprawl",
+				title:"2050 Compact Growth",
 				thumbnailUrl:"resources/images/app/sjvbp_thumb.png"
 			});
 			basemapGallery.add(basemap);
@@ -295,7 +295,7 @@ define(["esri/map",
 				thumbnailUrl:"resources/images/app/unemp_thumb.png"
 			});
 			basemapGallery.add(basemap);
-			
+			/*
 			var taplayer = new esri.dijit.BasemapLayer({
 				url: "http://server.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Tapestry/MapServer"
 			});
@@ -308,7 +308,7 @@ define(["esri/map",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/f5c23594330d431aa5d9a27abb90296d/info/thumbnail/Tapestery.jpg"
 			});
 			basemapGallery.add(basemap);
-			
+			*/
 			var layer = new esri.dijit.BasemapLayer({
 				url:"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"
 			});
