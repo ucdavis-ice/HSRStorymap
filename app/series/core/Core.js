@@ -269,7 +269,7 @@ define(["esri/map",
 				thumbnailUrl:"resources/images/app/ces_thumb.png"
 			});
 			basemapGallery.add(basemap);
-			
+			/*
 			var sjvbplayer = new esri.dijit.BasemapLayer({
 				url: "http://tiles.arcgis.com/tiles/lHvXoGmRRRummORj/arcgis/rest/services/SJV_Blueprint_Scenario_B_Plus/MapServer"
 			});
@@ -282,7 +282,7 @@ define(["esri/map",
 				thumbnailUrl:"resources/images/app/sjvbp_thumb.png"
 			});
 			basemapGallery.add(basemap);
-			
+			*/
 			var unemplayer = new esri.dijit.BasemapLayer({
 				url: "http://server.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Unemployment_Rate/MapServer"
 			});
