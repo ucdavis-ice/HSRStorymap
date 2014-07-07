@@ -304,7 +304,7 @@ define(["esri/map",
 			});
 			var basemap = new esri.dijit.Basemap({
 				layers:[layer2, taplayer], 
-				title:"2012 Tapestry",
+				title:"Demographics",
 				thumbnailUrl:"http://www.arcgis.com/sharing/rest/content/items/f5c23594330d431aa5d9a27abb90296d/info/thumbnail/Tapestery.jpg"
 			});
 			basemapGallery.add(basemap);
