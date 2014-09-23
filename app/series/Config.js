@@ -8,7 +8,7 @@ define([],
 			//The web map id
 			webmaps: [
 			{
-				id: "b9c496675c02461cbdc8e3cd850976e3",
+				id: "422664d0ae8f43a594e2bf6112b4e04a",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -17,7 +17,7 @@ define([],
 				// Set to true if you want the legend of this specific map to open when a user selects the tab for this map.
 				openLegendOnChange: false
 			},{
-				id: "a01927e7557f41dc8eef93c8820e6763",
+				id: "c42d4cdaa3be4fcb875b269fe654e91b",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -27,7 +27,7 @@ define([],
 				openLegendOnChange: false
 			},
 			{
-				id: "66d03eaca55443c7998e55a571704966",
+				id: "583f063a891249fb94eb6b1a32988f59",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -37,7 +37,7 @@ define([],
 				openLegendOnChange: false
 			},
 			{
-				id: "e943dca78cd941e1b33e2a8ed3de3d47",
+				id: "a5483317929b4ace86831b26fca61746",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
@@ -47,7 +47,7 @@ define([],
 				openLegendOnChange: false
 			},
 			{
-				id: "c8accaacb48d4c1ea763143fd3a22a66",
+				id: "46cbfe7d551a4f46b3f15ab38d909157",
 				title: "",
 				// If your map has time properties, choose to show a single time instance instead of the time interval saved with the web map.
 				showSingleTimeInstance: false,
