@@ -225,3 +225,11 @@ z-index: 2;
 border-color: #FFFFF !important; 
 
 }
+
+.esriBasemapGalleryLabelContainer {
+background-color: transparent;
+text-align: center;
+width: 110%;
+height: 2.5em;
+overflow: hidden;
+display: block;

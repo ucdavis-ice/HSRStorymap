@@ -1,3 +1,4 @@
+# 
 # side-accordion-map-storytelling-template-js
 
 This storytelling template enables users to place multiple webmaps into an applcation and view them in a series. Users can navigate the series with a side accordion. Each map is shown with a text description and map legend. If the user zooms into one map and then switches theme, the new map is automatically shown at a matching scale and extent. This application also features responsive design allowing users to view stories on all devices with a single URL.
